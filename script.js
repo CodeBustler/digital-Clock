@@ -49,5 +49,5 @@ setInterval(() => {
   month.innerHTML = cMonth;
 
   // Display Year
-  year.innerHTML = cYear;
+  year.innerHTML = `'${cYear}`;
 }, 1000);
