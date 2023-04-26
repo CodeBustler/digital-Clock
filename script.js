@@ -17,6 +17,7 @@ setInterval(() => {
   }
 
   // Month & Year
+  let cDate = date.getDate();
   let cMonth = date.getMonth() + 1;
   let cYear = date.getFullYear();
   // Days
@@ -43,11 +44,11 @@ setInterval(() => {
   clock.innerHTML = `${hours}:${minutes}:${seconds} `;
 
   // Display Day
-  daydisplay.innerHTML = daysName[day];
+  daydisplay.innerHTML = ` ${daysName[day]} | ${cDate}-`;
 
   // Display Month
   month.innerHTML = cMonth;
 
   // Display Year
-  year.innerHTML = `'${cYear}`;
+  year.innerHTML = `-${cYear}`;
 }, 1000);
